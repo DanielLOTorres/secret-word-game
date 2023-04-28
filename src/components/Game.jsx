@@ -31,7 +31,7 @@ export default function Game({
       <h3 className="tip">
         Tip: <span>{pickedCategory}</span>
       </h3>
-      <p>You have {guesses} left</p>
+      <p>You have {guesses} guesses left</p>
       <div className="wordContainer">
         {letters.map((l, i) =>
           guessedLetters.includes(l) ? (
