@@ -4,10 +4,10 @@ export default function GameOver({retry, score}) {
   return (
     <div>
       <h1>
-        Fim de jogo
+        Game Over!
       </h1>
-      <h2>A sua pontuação foi: <span>{score}</span></h2>
-      <button onClick={retry}>Reiniciar Jogo</button>
+      <h2>Your Score: <span>{score}</span></h2>
+      <button onClick={retry}>Restart</button>
     </div>
   )
 }

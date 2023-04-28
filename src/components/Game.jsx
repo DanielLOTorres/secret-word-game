@@ -25,13 +25,13 @@ export default function Game({
   return (
     <div className="game">
       <p className="points">
-        <span>Pontuação: {score}</span>
+        <span>Score: {score}</span>
       </p>
-      <h1>Advinhe a palavra:</h1>
+      <h1>Guess the Word:</h1>
       <h3 className="tip">
-        Dica sobre a palavra <span>{pickedCategory}</span>
+        Tip: <span>{pickedCategory}</span>
       </h3>
-      <p>Você ainda tem {guesses} tentativas</p>
+      <p>You have {guesses} left</p>
       <div className="wordContainer">
         {letters.map((l, i) =>
           guessedLetters.includes(l) ? (
@@ -44,7 +44,7 @@ export default function Game({
         )}
       </div>
       <div className="letterContainer">
-        <p>Tente advinhar uma letra da palavra</p>
+        <p>Guess a letter</p>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -59,9 +59,9 @@ export default function Game({
         </form>
       </div>
       <div className="wrongLettersContainer">
-        <p>Letras já usadas</p>
+        <p>Wrong letters:</p>
         {wrongLetters.map((l, i) => (
-          <span key={i}>{l}</span>
+          <span key={i}>{l}, </span>
         ))}
         <span></span>
       </div>

@@ -7,7 +7,7 @@ export default function StartScreen({startGame}) {
   return (
     <div className='start'>
         <h1>Secret Word Game</h1>
-        <button onClick={startGame}>Começar o Jogo</button>
+        <button onClick={startGame}>Start</button>
         
     </div>
   )
